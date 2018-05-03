@@ -1,0 +1,17 @@
+<div class="row">
+  <!-- Si no hay eventos, aparece el h3 -->
+  <h3 *ngIf="!events || events.length==0">No hay eventos disponibles</h3>
+  <!-- Si hay eventos, bucleamos hasta mostrarlos todos -->
+  <div class="col-6 mt-4" *ngFor="let event of events">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{event.title}}</h4>
+        <p class="card-text">{{event.description}}</p>        
+      </div>
+      <div class="card-footer text-muted">
+        {{event.date}}
+        <span class="float-right">{{event.price}}€</span>
+      </div>
+    </div>
+  </div>
+</div>

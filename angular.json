@@ -6,7 +6,7 @@
     "angular-events": {
       "root": "",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "",
       "schematics": {},
       "architect": {
         "build": {
